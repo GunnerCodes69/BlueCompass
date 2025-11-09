@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Reservation - Blue Compass Travel</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="icon" type="image/svg+xml" href="images/compass-svgrepo-com.svg">
+		<style>
+			@keyframes pageFadeIn {
+				from {
+					opacity: 0;
+					transform: translateY(20px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			#page-wrapper {
+				animation: pageFadeIn 0.7s ease-out;
+			}
+			
+			/* --- Reservation Form Styles --- */
+			#content .box.post h3 {
+				margin-top: 1em;
+				margin-bottom: 0.75em;
+				font-size: 1.5em;
+				border-bottom: 2px solid #f0f0f0;
+				padding-bottom: 0.5em;
+			}
+			#content .box.post label {
+				display: block;
+				margin-bottom: 0.5em;
+				font-weight: 600;
+				font-size: 0.9em;
+				color: #555;
+			}
+            #content input[type="date"],
+	        #content input[type="number"] {
+		        -moz-appearance: none;
+		        -webkit-appearance: none;
+		        -ms-appearance: none;
+        		appearance: none;
+	        	background: #f7f7f7;
+		        border: 0;
+	        	border-radius: 8px;
+	        	color: #888;
+	        	display: block;
+	        	height: 3.5em;
+	        	padding: 0 1em;
+	        	width: 100%;
+	        	line-height: 3.5em; 
+	        }
+            #content input[type="date"] {
+	        	padding-right: 1em;
+	        }
+		</style>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="index.html">Blue Compass Travel</a></h1>
+							<p>Your Next Adventure Awaits</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li class="current"><a href="services.html">Services</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style2">
+					<div class="title">Reservation</div>
+					<div class="container">
+
+						<!-- Content -->
+							<div id="content">
+								<article class="box post">
+									
+									<header class="style1">
+										<h2>Confirm Your Trip</h2>
+										<p>Please fill out the details below to complete your booking.</p>
+									</header>
+									
+									<section>
+										<form method="post" action="ReservationSuccess.html">
+											<div class="row gtr-50">
+												
+												<!-- Section 1: Trip Details -->
+												<div class="col-12">
+													<h3>1. Your Trip</h3>
+												</div>
+
+												<div class="col-12">
+													<label for="trip-package">Selected Package</label>
+													<select name="trip-package" id="trip-package">
+														<option value="glasgow">Palawan, Philippines</option>
+														<option value="venezia">Venice, Italy</option>
+														<option value="tokyo">Tokyo, Japan</option>
+													</select>
+												</div>
+
+												<div class="col-6 col-12-small">
+													<label for="trip-date">Travel Date</label>
+													<input type="date" name="trip-date" id="trip-date" value=""" />
+												</div>
+												<div class="col-3 col-12-small">
+													<label for="trip-adults">Adults</label>
+													<input type="number" name="trip-adults" id="trip-adults" value="0" min="1" />
+												</div>
+												<div class="col-3 col-12-small">
+													<label for="trip-children">Children</label>
+													<input type="number" name="trip-children" id="trip-children" value="0" min="0" />
+												</div>
+
+
+												<!-- Section 2: Billing Information -->
+												<div class="col-12">
+													<h3>2. Billing Information</h3>
+												</div>
+												<div class="col-6 col-12-small">
+													<label for="billing-name">Full Name</label>
+													<input type="text" name="billing-name" id="billing-name" placeholder="" />
+												</div>
+												<div class="col-6 col-12-small">
+													<label for="billing-email">Email</label>
+													<input type="email" name="billing-email" id="billing-email" placeholder="" />
+												</div>
+												<div class="col-12">
+													<label for="billing-address">Address</label>
+													<input type="text" name="billing-address" id="billing-address" placeholder="" />
+												</div>
+												<div class="col-6 col-12-small">
+													<label for="billing-city">City</label>
+													<input type="text" name="billing-city" id="billing-city" placeholder="" />
+												</div>
+												<div class="col-3 col-12-small">
+													<label for="billing-state">State</label>
+													<input type="text" name="billing-state" id="billing-state" placeholder="" />
+												</div>
+												<div class="col-3 col-12-small">
+													<label for="billing-zip">ZIP Code</label>
+													<input type="text" name="billing-zip" id="billing-zip" placeholder="" />
+												</div>
+
+												<!-- Section 3: Payment -->
+												<div class="col-12">
+													<h3>3. Payment</h3>
+												</div>
+												<div class="col-12">
+													<label for="payment-card">Card Number</label>
+													<input type="text" name="payment-card" id="payment-card" placeholder="0000 0000 0000 0000" />
+												</div>
+												<div class="col-6 col-12-small">
+													<label for="payment-expiry">Expiry (MM/YY)</label>
+													<input type="text" name="payment-expiry" id="payment-expiry" placeholder="MM / YY" />
+												</div>
+												<div class="col-6 col-12-small">
+													<label for="payment-cvc">CVC</label>
+													<input type="text" name="payment-cvc" id="payment-cvc" placeholder="123" />
+												</div>
+
+												<!-- Submit Button -->
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Confirm & Pay" /></li>
+														<li><input type="reset" class="style2" value="Clear Form" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+									
+								</article>
+							</div>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">Contact Us</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Ready for Your Next Adventure?</h2>
+							<p>
+								Have a quetion, a special request, or just want to say hello?<br />
+								We're here to help you plan your unforgettable journey.
+							</p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="message-sent.html">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-home">Mailing Address</h3>
+													<p>
+														Blue Compass Travels<br />
+														Blk 3, Lot 21<br />
+														Garcia Heights, Davao City 8000
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-comment">Social</h3>
+													<p>
+														<a href="#">@bluecompass.com</a><br />
+														<a href="#">linkedin.com/bluecompass</a><br />
+														<a href="#">facebook.com/bluecompasstravels</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-envelope">Email</h3>
+													<p>
+														<a href="#">info@bluecompass.com</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-phone">Phone</h3>
+													<p>
+														(420) 696-6767
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div id="copyright">
+							<ul>
+								<li>&copy; Blue Compass</li><li>Design: <a href="https://github.com/GunnerTheGreat">GUNNER</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

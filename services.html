@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Blue Compass | Services</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/svg+xml" href="images/compass-svgrepo-com.svg">
+        <style>
+			@keyframes pageFadeIn {
+				from {
+					opacity: 0;
+					transform: translateY(20px); /* Makes it slide up slightly */
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			/* --- This is your new grid layout --- */
+			.card-grid {
+				display: grid;
+		
+				/* This tells the browser to create as many 300px columns as
+			  	will fit, and then make them all equal. On small screens,
+			  	it will automatically stack to 1 column.
+				*/
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		
+				/* This is the space between your cards */
+				gap: 25px; 
+			}
+
+
+		/* --- These are your existing card styles (unchanged) --- */
+			.custom-card {
+				background: #ffffff;
+				border-radius: 16px; /* Rounded corners */
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow */
+				overflow: hidden; /* Keeps image corners rounded */
+				display: flex;
+				flex-direction: column; /* Stack image and content vertically */
+				height: 100%; /* Makes all cards in a row the same height */
+			}
+
+			.card-image {
+				width: 100%;
+				height: 200px; /* Give the image a fixed height */
+			}
+
+			.card-image img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover; /* Ensures image covers the area, cropping if needed */
+			}
+
+			.card-content {
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1; /* Allows content to fill the remaining card height */
+			}
+
+			.card-offer {
+				color: #00aadd; /* Teal-like color from image */
+				font-weight: 700;
+				font-size: 0.9em;
+				margin-bottom: 10px;
+			}
+
+			.card-content h3 {
+				font-size: 1.4em;
+				font-weight: 700;
+				margin-bottom: 15px;
+			}
+
+			.card-info {
+				display: flex;
+				gap: 20px;
+				margin-bottom: 15px;
+				color: #777;
+			}
+
+			.card-info span {
+				display: flex;
+				align-items: center;
+				font-size: 0.9em;
+			}
+
+			.card-info .icon {
+				margin-right: 8px; /* Space between icon and text */
+			}
+	
+			.card-content p {
+				margin-bottom: 20px;
+				flex-grow: 1; /* Pushes the button to the bottom */
+			}
+	
+			card-button {
+                                background-color: #27c0c0 !important; /* Specific teal color from image */
+                                color: #ffffff !important;
+                                border-radius: 8px !important;
+                                padding: 10px 20px !important;
+                                text-align: center;
+                                                
+                        }
+	
+			.card-button:hover {
+				background-color: #2fa8ff !important; /* A slightly darker hover */
+			}
+		</style>
+                
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="index.html">SERVICES</a></h1>
+							<p>Explore more of our deals and promotions of our Services</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<!--<li><a href="left-sidebar.html">Left Sidebar</a></li>-->
+								<li class="current"><a href="services.html">SERVICES</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style2">
+					<div class="title">TOUR DEALS</div>
+					<div class="container">
+
+						<div id="content">
+								<article class="box post">
+								
+									<div class="card-grid">
+						
+										<section class="custom-card">
+											<div class="card-image">
+												<img src="https://tse1.mm.bing.net/th/id/OIP.H6-OMZJD5xNF5k6O0SK4-gHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mountains by a lake" />
+											</div>
+											<div class="card-content">
+												<p class="card-offer">*Limited Offer Today</p>
+												<h3>Palawan, Phillipines</h3>
+												<div class="card-info">
+													<span><i class="icon solid fa-clock"></i> 5 Days</span>
+													<span><i class="icon solid fa-map-pin"></i> Daily Places</span>
+												</div>
+												<p>Palawan is a slice of heaven, a sliver of an island that teems with exotic wildlife, quaint fishing villages, and UNESCO World Heritage Sites. Wave hello to endangered animals at the Calauit Game Preserve and Wildlife Sanctuary or explore the Japanese shipwrecks of Coron Island, regarded as one of the best dive sites in the world. A guided boat tour of the Puerto Princesa Underground River will take your breath away.</p>
+												<a href="reservation.html" class="button style1 card-button">Make A Reservation</a>
+											</div>
+										</section>
+								
+										<section class="custom-card">
+											<div class="card-image">
+												<img src="https://tse1.mm.bing.net/th/id/OIP.DW5KOlzyAxtcXbekty4xnQHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="City canal with bridge" />
+											</div>
+											<div class="card-content">
+												<p class="card-offer">*Today & Tomorrow Only</p>
+												<h3>Venice, Italy</h3>
+												<div class="card-info">
+													<span><i class="icon solid fa-clock"></i> 5 Days</span>
+													<span><i class="icon solid fa-map-pin"></i> Daily Places</span>
+												</div>
+												<p>Venice may be ideal for wandering, but its majestic palazzos were built to be admired from the water. Take the number 1 Vaporetto (waterbus) that plies the Grand Canal and experience one of the world’s greatest public transport routes. </p>
+												<a href="reservation.html" class="button style1 card-button">Make A Reservation</a>
+											</div>
+										</section>
+								
+										<section class="custom-card">
+											<div class="card-image">
+												<img src="https://tse2.mm.bing.net/th/id/OIP.315o7yP3fFCGBjP82yBFbwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Streets in Japan" />
+											</div>
+											<div class="card-content">
+												<p class="card-offer">*This Weekend Only</p>
+												<h3>Tokyo, Japan</h3>
+												<div class="card-info">
+													<span><i class="icon solid fa-clock"></i> 7 Days</span>
+													<span><i class="icon solid fa-map-pin"></i> City Spots</span>
+												</div>
+												<p>Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens.</p>
+												<a href="reservation.html" class="button style1 card-button">Make A Reservation</a>
+											</div>
+										</section>
+
+									</div>
+								</article>
+							</div>
+
+					</div>
+				</div>
+				</div>
+
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">Contact Us</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Ready for Your Next Adventure?</h2>
+							<p>
+								Have a quetion, a special request, or just want to say hello?<br />
+								We're here to help you plan your unforgettable journey.
+							</p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="message-sent.html">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-home">Mailing Address</h3>
+													<p>
+														Blue Compass Travels<br />
+														Blk 3, Lot 21<br />
+														Garcia Heights, Davao City 8000
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-comment">Social</h3>
+													<p>
+														<a href="#">@bluecompass.com</a><br />
+														<a href="#">linkedin.com/bluecompass</a><br />
+														<a href="#">facebook.com/bluecompasstravels</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-envelope">Email</h3>
+													<p>
+														<a href="#">info@bluecompass.com</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-phone">Phone</h3>
+													<p>
+														(420) 696-6767
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div id="copyright">
+							<ul>
+								<li>&copy; Blue Compass</li><li>Design: <a href="https://github.com/GunnerTheGreat">GUNNER</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
